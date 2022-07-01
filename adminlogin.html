@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/adminlogin.css">
+<style>
+       body{
+        background-image: url('background.jpg');
+        background-size:cover ;
+    }
+</style>
+<script>
+function check()
+{ 
+    if(form1.username.value == "sandraalfy" && form1.password.value == "1234") {
+    window.location.href = "admin.html";
+}
+else {
+    alert("Incorrect Username or Password");
+    event.preventDefault();
+    return false;
+} 
+} 
+</script> 
+</head>
+<body>
+<form id ="form1" method="post" action="admin.html" onsubmit="check()">
+   <h2>Login</h2>
+    <input type="text" name="username" placeholder="User Name"  required>
+     <input type="password" name="password"  placeholder="password"  required>
+    <button type="button" onclick="check()">Login</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="css/admin.css">
+<meta charset="utf-8">
+<title>Admin Page</title>
+<style>
+  body{
+      background-image: url('background.jpg');
+      background-size:cover ;
+      background-repeat: no-repeat;
+  
+  }
+</style>
+<script>
+    
+    function changeBodyBg(color){
+        document.body.style.background = color;
+    }
+    
+    function changeHeadingBg(color){
+        document.getElementById("heading").style.background = color;
+    
+    document.getElementById('change').onclick = changeColor;   
+  }
+    function changeColor(color) {
+        document.body.style.color = color;
+        return false;
+    }   
+var min = 8;
+var max = 18;
+
+function increaseFontSize() {
+  var p = document.getElementsByTagName('p');
+  for (i = 0; i < p.length; i++) {
+    if (p[i].style.fontSize) {
+      var s = parseInt(p[i].style.fontSize.replace("px", ""));
+    } else {
+      var s = 12;
+    } if (s != max) {
+      s += 1;
+    }
+    p[i].style.fontSize = s + "px"
+  }
+}
+
+function decreaseFontSize() {
+  var p = document.getElementsByTagName('p');
+  for (i = 0; i < p.length; i++) {
+    if (p[i].style.fontSize) {
+      var s = parseInt(p[i].style.fontSize.replace("px", ""));
+    } else {
+      var s = 12;
+    } if (s != min) {
+      s -= 1;
+    }
+    p[i].style.fontSize = s + "px"
+  }
+}
+</script>
+</head>
+<body>
+    <h1 id="heading">CODEZILLA</h1>
+<p>WELCOME TO ADMIN PAGE!</p>
+ <div class="div1">
+        <label >WEBPAGE BACKGROUND COLOR:</label>
+<hr/>
+
+        <button class="btn button" onclick="changeBodyBg('darkgrey');">Grey</button>
+<br>
+
+        <button class="btn button" onclick="changeBodyBg('#7D5F5E');">Old Burgundy</button>
+<br>
+
+        <button class="btn button" onclick="changeBodyBg('#5C3317');">Brown</button>
+    </div>
+    <div class="div2">
+        <label>HEADING BACKGROUND COLOR:</label>
+<hr/>
+
+        <button class="btn button" onclick="changeHeadingBg('Violet');">Violet</button>
+<br>
+
+        <button class="btn button" onclick="changeHeadingBg('olive');">Olive</button>
+<br>
+
+        <button class="btn button" onclick="changeHeadingBg('blue');">Blue</button>
+    </div>
+<div class="div3">
+<label >FONT COLOR :</label>
+<hr/>
+<button class="btn button" onclick="changeColor('black');">Black</button>
+<br>
+<button class="btn button" onclick="changeColor('white');"> White</button>
+<br>
+<button class="btn button" onclick="changeColor('orange');"> Orange</button>
+</div>
+<div class="div4">
+<label >FONT SIZE : </label>
+<hr/>
+<button class="btn button" onclick="increaseFontSize();">LARGE</button>
+<br>
+<button class="btn button" onclick="decreaseFontSize();"> SMALL</button>
+</div>
+</body>
+</html>

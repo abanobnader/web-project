@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+    </style>
+    <script>
+
+        function signup() {
+            var form = document.getElementById("form");
+            var localStorage = window.localStorage;
+            let inputemail = document.getElementById("email");
+            let inputusername = document.getElementById("text");
+            let inputpassword = document.getElementById("password");
+            let passwordagain = document.getElementById("pass");
+
+
+
+            const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+            let newaccount = {
+                email: inputemail.value,
+                text: inputusername.value,
+                password: inputpassword.value,
+                passwors: passwordagain.value,
+                type: "user"
+            }
+            console.log("newaccount", newaccount);
+            accounts.push(newaccount);
+            localStorage.setItem("accounts", JSON.stringify(accounts));
+            form.setAttribute('action', "login.html");
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form id="form" required="required">
+
+
+        <h2>Sign Up</h2>
+
+        <input id="email" type="email" placeholder="Email" required>
+        <input id="text" type="text" placeholder="User Name" required>
+        <input id="password" type="password" placeholder="Enter password" required>
+        <input id="pass" type="password" placeholder="Enter password again" required>
+        <button onclick="signup();">signup</button>
+
+    </form>
+
+</body>
+
+</html>

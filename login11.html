@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+    </style>
+    <script>
+        function login() {
+            var form = document.getElementById("form");
+            var localStorage = window.localStorage;
+            const submitbutton = document.getElementById("button");
+
+            const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+            console.log("accounts", accounts);
+            let username = document.getElementById("text").value;
+            let password = document.getElementById("password").value;
+            let found = false;
+            for (let i = 0; i < accounts.length; i++) {
+                if (accounts[i]["text"] === username) {
+                    found = true;
+                    if (accounts[i]["password"] === password) {
+                        localStorage.setItem("currentuser", JSON.stringify(accounts[i]));
+
+                        form.setAttribute('action', "home.html");
+                        break;
+
+                    }
+                    else {
+                        alert("password or username is wrong");
+                        break;
+                    }
+                }
+            }
+            if (!found) {
+                alert("you are not a register")
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form id="form" required="required">
+        <h2>Login</h2>
+        <input id="text" type="text" placeholder="User Name" required>
+        <input id="password" type="password" placeholder="password" required>
+        <p>forget password ?</p>
+        <button onclick="login();">login</button>
+    </form>
+</body>
+
+</html>
