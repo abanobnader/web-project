@@ -1,0 +1,123 @@
+body {
+  /* background-image: url("https://media.istockphoto.com/photos/top-view-desk-with-laptop-and-supplies-for-work-to-optimize-area-for-picture-id1289678351?b=1&k=6&m=1289678351&s=170667a&w=0&h=tjC8dye8KFDGU88SIsqAwNSK6GP1HytQGCs8wVyx0mg="); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  font-size:50px;
+}
+h1{
+  color:white;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+p{
+  position: absolute;
+  font-size:70px;
+  top: 400px;
+}
+.div1{
+  font-size:33px;
+  color:white;
+  letter-spacing: 1px;
+  background-color: black;
+  opacity: 0.8;
+  width: 400px;
+  height:300px;
+  padding: 50px;
+  margin: 20px;
+  border:5px solid black;
+  border-radius: 10px;
+  top:50%;
+  right:50%;
+  margin-left: 2000px;
+  margin-top: 400px;
+}
+.div2{
+  font-size:33px;
+  color:white;
+  letter-spacing: 1px;
+  background-color: black;
+  opacity: 0.8;
+  border:5px solid black;
+  width: 400px;
+  height:300px;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 30px;
+  top:10%;
+  right:50%;
+  margin-left: 1440px;
+  margin-top: -430px;
+}
+.div3{
+  font-size:33px;
+  color:white;
+  letter-spacing: 1px;
+  border:5px solid black;
+  background-color: black;
+  opacity: 0.8;
+   width: 400px;
+  border-radius: 10px;
+  height:300px;
+  padding: 50px;
+  margin: 20px;
+  margin-left: 1440px;
+  margin-top: 60px;
+}
+.div4{
+  font-size:33px;
+  color:white;
+  letter-spacing: 1px;
+  background-color: black;
+  opacity: 0.8;
+  border:5px solid black;
+   width: 400px;
+  height:300px;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  top:50%;
+  right:50%;
+  margin-left: 2000px;
+  margin-top: -430px;
+}
+/*.btn {
+  border: 1px solid black;
+  background-color: cream;
+  color: black;
+  padding: 16px 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.button {
+  border-color:#5E7D7E;
+  color: black;
+}
+
+.button:hover {
+  background-color: #7D5F5E;
+  color: white;
+}*/
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: white;
+  opacity: 1.0;
+  border: none;
+  margin:5px;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #f5deb3}
+
+.button:active {
+  background-color: #f5deb3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

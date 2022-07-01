@@ -1,0 +1,103 @@
+#signup-form{
+  position:absolute;
+   top: 50%;
+   left: 400px;
+   transform: translate(-50%,-50%);
+   width: 350px;
+   height: 520px;
+   background:rgba(0,0,0,0.5) ; 
+   border-radius: 15px;
+   box-sizing: border-box;
+}
+#login-form{
+  position:absolute;
+   top: 50%;
+   left: 1100px;
+   transform: translate(-50%,-50%);
+   width: 350px;
+   height: 520px;
+   background:rgba(0,0,0,0.5) ; 
+   border-radius: 15px;
+   box-sizing: border-box;
+}
+input[type="text"],[type="password"]{
+  position:absolute;
+  outline: none;
+  border: none;
+  width:250px;
+  height: 35px;
+  border-bottom:2px solid #0094ff ;
+  background:none ;
+  padding: 5px;
+  color: #fff;
+}
+#name1{
+  top: 140px;
+  left: 50px;
+}
+#pass1{
+  top: 210px;
+  left: 50px;
+}
+#name2{
+  top: 140px;
+  left: 50px;
+}
+#pass2{
+  top: 210px;
+  left: 50px;
+}
+::placeholder{
+  color: #fff;
+}
+#signup_btn{  
+  position: absolute;
+      top: 305px;
+      left: 110px;
+      width: 130px;
+      height: 35px;
+      background: #0077ff;
+      border: none;
+      outline:none;
+      color: #fff;
+      border-radius: 15px;
+      font-size: 20px;
+}
+#signup_btn:hover{
+  background: #fff;
+  color: #0077ff;
+}
+#login_btn{  
+  position: absolute;
+      top: 305px;
+      left: 110px;
+      width: 130px;
+      height: 35px;
+      background: #0077ff;
+      border: none;
+      outline:none;
+      color: #fff;
+      border-radius: 15px;
+      font-size: 20px;
+}
+#login_btn:hover{
+  background: #fff;
+  color: #0077ff;
+}
+#zzz{  
+  position: absolute;
+      top: 305px;
+      left: 600px;
+      width: 400px;
+      height: 80px;
+      background: #0077ff;
+      border: none;
+      outline:none;
+      color: #fff;
+      border-radius: 15px;
+      font-size: 20px;
+}
+#zzz:hover{
+  background: #fff;
+  color: #0077ff;
+}
